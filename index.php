@@ -1,53 +1,31 @@
 <?php
     $break = "<br>";
-    $x = 0;
-    echo $x, $break;
-    ++$x  ; // pre increment operator
-    $x++ ;  // post increment operator
-    $x-- ;  // post decrement operator
-    $x = 2;
-    $y = 3;
-    echo $x**$y, $break; // ** Exponentiation arithmetic operator 
-
-    $x = 1;
-    $x += 8; // assignment operators
-    $x -= 2;
-    $x *= 2;
-    $x /= 2;
-    $x %= 2;
-    echo $x, $break; 
-
-    // Problem : Find greater number between two number
-
-    // Conditional Statements
-    $x = 7;
-    $y = 10;
-    if($x > $y){ 
-    echo "A is Big";
-    }
-    else{
-        echo "B is Big" . $break;
-    }
-
-    // Problem : Check the number even or odd 
-
-    $x = 7;
-    if ($x % 2 == 0){
-        echo "Number is even";
-    }
-    else {
-        echo "Number is odd";
-    }
-
-    // Problem : Check the number positive or negative 
-
-    $x = -0.20;
-    if($x > 0 ){
-        echo $break . "Positive";
-    }
-    else{
-        echo $break . "Negative"; 
-    }
     
-    echo "<p> Life is short </p>"
+    // Array
+    $students = [89, 87, 85, 81, 79, 75, 72, 69];
+    $students[8] = 98;
+    echo $students[2] + $students[0] . "<br>";
+    echo $students[8] . "<br>";
+
+    $cars = [];
+    $cars[0] = "Toyota";
+    $cars[1] = "Suzuki";
+    $cars[2] = "Lamborgini";
+    echo $cars[1] . "<br>";
+
+    // Associative Array 
+    $students = [ 'name'=> "Mahmud", 'roll' => 3, 'location' => "Naogoan" ];
+    echo $students['name'] . "<br>";
+    echo $students['roll'] . "<br>";
+    echo $students['location'] . "<br>";
+
+    // old declaration
+    $birds = array();
+    $birds[0] = "Doel";
+    $birds[1] = "Koel";
+    $birds[2] = "Tiya";
+    echo $birds[1] . "<br>";
+
+    // Loop
+    
 ?>
